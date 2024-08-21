@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    width: auto;  /* Mantém a proporção da imagem */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links li {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o cursor */
+    color: #007bff; /* Cor do texto ao passar o cursor */
+}
+
+.nav-links li::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Cor da linha */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links li:hover::before {
+    width: 100%; /* Linha sublinhada ao passar o cursor */
+    left: 0;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Esconde o menu padrão no mobile */
+    }
+
+    .nav-links-mobile {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+        left: 0;
+        top: 10vh;
+        width: 100%;
+        background-color: white;
+        padding: 20px 0;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-links-mobile a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .nav-links-mobile li {
+        position: relative;
+        color: black;
+        font-size: 20px;
+        padding: 15px 20px;
+        margin: 0;
+        cursor: pointer;
+        text-transform: capitalize;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-links-mobile li:hover {
+        background-color: #f0f0f0; /* Cor de fundo ao passar o cursor */
+        color: #007bff; /* Cor do texto ao passar o cursor */
+    }
+
+    .nav-links-mobile li::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #007bff; /* Cor da linha */
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .nav-links-mobile li:hover::before {
+        width: 100%; /* Linha sublinhada ao passar o cursor */
+        left: 0;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo {
+        height: 30px; /* Ajuste a altura da imagem no mobile se necessário */
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+}
