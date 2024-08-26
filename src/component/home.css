@@ -1,0 +1,56 @@
+/* home.css */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Coloca o texto e a imagem nos extremos */
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1; /* Permite que o texto ocupe o espaço restante à esquerda */
+    margin-right: 20px; /* Espaçamento entre o texto e a imagem */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+.text-content h1 {
+    font-size: 3rem; /* Aumenta o tamanho do texto */
+    margin-bottom: 10px; /* Espaço entre o título e o parágrafo */
+    position: relative; /* Necessário para posicionar a linha */
+}
+
+.text-content h1::after {
+    content: ''; /* Cria a linha */
+    display: block;
+    width: 15%; /* Largura da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #000; /* Cor da linha (preta, pode ser ajustada) */
+    position: absolute;
+    bottom: -5px; /* Espaçamento entre o título e a linha */
+    left: 0;
+}
+
+.text-content p {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 1rem; /* Tamanho do texto do parágrafo */
+}
+
+.about-image {
+    width: 700px; /* Ajuste a largura conforme necessário */
+    height: auto;
+    border-radius: 8px;
+}
+
+.quem-somos {
+    text-align: center; /* Centraliza o texto dentro da seção */
+    padding: 40px 20px; /* Adiciona espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo opcional para a seção */
+}
+
+.quem-somos h2 {
+    font-size: 2.5rem; /* Ajuste o tamanho do título conforme necessário */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.quem-somos p {
+    font-size: 1rem; /* Tamanho do texto do parágrafo */
+}

@@ -1,5 +1,6 @@
 import React from "react";
-const About = () => {
+
+const Footer = () => {
     return (
         <section className='hero'>
             <h1></h1>
@@ -7,4 +8,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Footer;

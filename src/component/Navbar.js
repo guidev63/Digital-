@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import logo from "../assets/Logo.png"; // Ajuste o caminho conforme necessário Sua Logo.
+import logo from "../assets/Logo.png"; // Ajuste o caminho conforme necessário Sua Logo...
 
 const Navbar = () => {
   const [Mobile, setMobile] = useState(false);
@@ -24,15 +24,15 @@ const Navbar = () => {
           </Link>
           <Link to="/about">
             {" "}
-            <li>About</li>
+            <li>Quem Somos </li>
           </Link>
           <Link to="/services">
             {" "}
-            <li>Services</li>
+            <li>Serviços</li>
           </Link>
           <Link to="/skills">
             {" "}
-            <li>Skills</li>
+            <li>Galeria de Fotos </li>
           </Link>
           <Link to="/contact">
             {" "}
