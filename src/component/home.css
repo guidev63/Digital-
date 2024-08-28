@@ -54,3 +54,24 @@
 .quem-somos p {
     font-size: 1rem; /* Tamanho do texto do parágrafo */
 }
+
+.funcoes-empresa {
+    display: flex;
+    justify-content: center; /* Centraliza os quadrados */
+    gap: 20px; /* Espaçamento entre os quadrados */
+    margin-top: 20px; /* Espaçamento acima dos quadrados */
+}
+
+.funcao {
+    width: 200px; /* Largura do quadrado aumentada */
+    height: 200px; /* Altura do quadrado aumentada */
+    background-color: #f0f0f0; /* Cor de fundo clara */
+    color: #333; /* Cor do texto mais escura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1.2rem; /* Tamanho do texto dentro do quadrado */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    padding: 10px; /* Adiciona espaçamento interno */
+}

@@ -14,9 +14,15 @@ const Home = () => {
                 <img src={Sobre} alt="Minha Foto" className="about-image" />
             </section>
             <section id="quem-somos" className="quem-somos">
-                <h2>Como funciona   </h2>
+                <h2>Como funciona</h2>
                 <p>Informações sobre a nossa empresa.</p>
-                {/* Adicione mais conteúdo sobre "Quem Somos" aqui */}
+                <div className="funcoes-empresa">
+                    <div className="funcao">Função 1</div>
+                    <div className="funcao">Função 2</div>
+                    <div className="funcao">Função 3</div>
+                    <div className="funcao">Função 4</div>
+                    {/* Adicione mais quadradinhos conforme necessário */}
+                </div>
             </section>
         </div>
     );
